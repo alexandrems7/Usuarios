@@ -1,0 +1,29 @@
+﻿@page 
+
+    @model IEnumerable<API.Usuarios.Models.Usuario>
+    @{
+          
+    }
+
+    @{
+
+    }
+
+
+<p>Tabela</p>
+
+@foreach (var item in Model)
+            {
+<tr>
+    <td>
+        @Html.DisplayNameFor(model => model.Nome)
+    </td>
+    <td>
+        @Html.DisplayNameFor(model => model.Email)
+    </td>
+
+    <td>
+        @Html.DisplayNameFor(model => model.Senha)
+    </td>
+</tr>
+            }
